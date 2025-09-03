@@ -112,10 +112,10 @@
         <el-button type="text" @click="introDialogVisible = true">
           点击查看模拟实验介绍
         </el-button>
-        <h5>数据修改</h5>
+        <!-- <h5>数据修改</h5>
         <el-button type="text" @click="indexDialogVisible = true">
           指标修改
-        </el-button>
+        </el-button> -->
       </template>
     </MapController>
 
@@ -402,7 +402,7 @@ export default {
         ],
       },
       introDialogVisible: false,
-      indexDialogVisible: true,
+      indexDialogVisible: false,
       alterFilePath: "", //选择修改的文件路径
       attrTable: {
         columns: [],
@@ -510,11 +510,11 @@ export default {
       },
       pointFileOptions: [],
       polygonFileOptions: [
-        {
-          label: "test1.shp",
-          value:
-            "D:\\PostgraduateStudy\\trafficdata\\polygon_shp\\Export_Output.shp",
-        },
+        // {
+        //   label: "test1.shp",
+        //   value:
+        //     "D:\\PostgraduateStudy\\trafficdata\\polygon_shp\\Export_Output.shp",
+        // },
       ],
 
       featureGeojson: null,

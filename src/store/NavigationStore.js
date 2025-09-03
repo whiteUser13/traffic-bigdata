@@ -94,10 +94,25 @@ export default new Vuex.Store({
         label: "模拟实验",
         children: [
           {
+            icon: "el-icon-cpu",
             path: "simu-mock",
             name: "simu-mock",
             label: "仿真模拟实验",
             component: "simu/SimuMock",
+          },
+          {
+            icon: "el-icon-connection",
+            label: "多网融合",
+            path: "net", // 路由路径
+            name: "Net", // 路由名称
+            component: "system/Net", // 对应组件路径
+          },
+          {
+            icon: "el-icon-s-help",
+            path: "anylogic",
+            name: "anylogic",
+            label: "混合交通流模拟",
+            component: "simu/anylogic",
           },
         ],
       },
